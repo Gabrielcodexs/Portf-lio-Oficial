@@ -1,0 +1,181 @@
+body{
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  width: 100%;
+}
+span{
+    color: rgb(1, 162, 255);
+}
+h1 {
+    font-size: 18px;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+  }
+  h2{
+    font-size: 18px;
+    color: #ffffff;
+    position: relative;
+
+  }
+  
+  .My-Project h1{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.container-div h1{
+  position: absolute;
+  margin-left: 530px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  margin-top: -60px;
+  text-decoration: underline;
+}
+  .regulation{
+    margin-top: -200px;
+    position: absolute;
+  }
+  .title{
+    text-align: center;
+    margin-top: -330px;
+    margin-left: 451px;
+    position: absolute;
+  }
+  .title h1{
+    font-size: 50px;
+  }
+  .description{
+    margin-left: 450px;
+    margin-top: -200px;
+    text-align: justify; /* Alinha o texto de forma justificada */
+    text-justify: inter-word; /* Melhora o ajuste de palavras no alinhamento */
+  }
+  .description h1 {
+    max-width: 800pX;
+    font-size: 18px;
+  }
+  
+  /* Definindo o pseudo-elemento ::after para a linha */
+  .line-animation::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0); /* Começa com escala de 0, centrada */
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff; /* Cor da linha */
+    visibility: hidden; /* Inicialmente invisível */
+    transition: visibility 0s 0.3s, transform 0.3s ease-in-out; /* Faz a animação acontecer */
+  }
+  
+  /* Quando o mouse passa sobre o texto, a animação é ativada */
+  .line-animation:hover::after {
+    visibility: visible; /* A linha fica visível */
+    transform: translateX(-50%) scaleX(1); /* Expande a linha de forma centralizada */
+    transition: transform 0.3s ease-in-out, visibility 0s; /* Reinicia a animação ao passar o mouse */
+  }
+  .container {
+    display: flex; /* Alinha as divs lado a lado */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Adiciona um espaço entre as divs */
+    flex-wrap: wrap; /* Permite que as divs quebrem para a linha seguinte quando necessário */
+    height: 100vh; /* Garante que o container ocupe toda a altura da tela */
+    padding: 20px; /* Adiciona um pouco de espaçamento ao redor */
+}
+
+.function {
+    background-color: transparent;
+    width: 23%; /* Largura de cada div, ajustada para 4 divs lado a lado */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    position: relative;
+}
+
+.function:hover {
+    transform: translateY(-100px); /* Efeito de levitar ao passar o mouse */
+}
+
+.function-view {
+    display: flex; /* Usando flexbox para centralizar os elementos */
+    flex-direction: column; /* Empilha os itens verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 100%; /* Garante que o flexbox ocupe toda a altura da div */
+}
+
+.function-view i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #3498db;
+}
+
+.function-view h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.function-view h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: transparent;
+}
+
+.function-view a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #3498db;
+    color: rgb(43, 19, 19);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.function-view a:hover {
+    background-color: #2980b9;
+}
+.sub-body h1{
+  color: rgb(46, 46, 46);
+  margin-left: 50px;
+  font-size: 40px;
+}
+.sub-body h2{
+  color: rgb(88, 88, 88);
+  margin-left: 50px;
+  margin-top: -18px;
+  font-size: 20px;
+}
+
+.sub-body span{
+  color: black;
+}
+.sub-body i{
+  color: rgb(12, 137, 255);
+  font-size: 20px ;
+  margin-left: 40px;
+  margin-top: 5px;
+
+}
+.icons-info {
+  margin-top: 70px; /* Ajuste o valor conforme necessário */
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+.icons-info h1{
+  color: rgb(82, 82, 82);
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  margin-left: 5px;
+  margin-top: 2px;
+  max-width: 400px;
+  position: absolute;
+}
